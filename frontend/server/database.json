@@ -1,5 +1,6 @@
 {
-   "persons":[
+  "persons":{
+    "persons": [
       {
          "matchedName":{
             "personID":488,
@@ -153,4 +154,5 @@
          "s18B":false
       }
    ]
+ }
 }

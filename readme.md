@@ -38,7 +38,7 @@ Preconditions:
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ```
-D:\mikev\git\cirrus\frontend> ng serve
+cirrus\frontend> ng serve
 ```
 
 ### Code scaffolding
@@ -68,13 +68,14 @@ run the client
 1. run the mock rest server (assumes /server/database.json exists)
 
 ```
-D:\mikev\git\cirrus\frontend> npm run server
+cirrus\frontend> npm install -g json-server
+cirrus\frontend> json-server server\database.json --routes server\routes.json
 ```
 
-2. run the ng server
+2. run the ng server with a proxy setting pointing to the mock server
 
 ```
-D:\mikev\git\cirrus\frontend> ng serve --proxy-config local-proxy\proxy.config.json
+cirrus\frontend> ng serve --proxy-config local-proxy\proxy.config.json
 ```
 
 3. navigate to page http://localhost:4200/home

@@ -1,0 +1,3 @@
+{
+  "/rest/person/v1\\?name=:name": "/persons"
+}
